@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,7 @@
                         Poppins: 'Poppins',
                     },
                     backgroundImage: {
-                        bannerBg: url('./images/banner.png')
+                        bannerBg: "url('./images/banner.png')",
                     },
                 }
             }
@@ -47,7 +47,63 @@
 
 <body>
     <!-- header starts here  -->
-    <header>
+    <header class="w-11/12 md:w-10/12 mx-auto mt-3">
+        <!-- navbar starts  -->
+        <nav class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-Poppins text-accent text-[16px]">
+                        <li><a>Home</a></li>
+                        <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-greater-than"></i></a></li>
+                        <li><a>Contact Us <i class="fa-solid fa-greater-than"></i></a></li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <img src="images/logo2.png" alt=""> 
+                </div>
+
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-Poppins text-accent text-[16px]">
+                    <li><a>Home</a></li>
+                    <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a>Blog <i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a>Contact Us <i class="fa-solid fa-greater-than"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-primary text-white text-sm md:text-lg font-semibold w-10/12">Free Consultation</a>
+            </div>
+        </nav>
+        <!-- navbar ends here  -->
+
+
+<!-- banner section starts here  -->
+ <div class="relative bg-bannerBg bg-no-repeat bg-cover object-cover  w-full rounded-xl  mt-12 mb-28 py-20 ">
+    <div class="absolute inset-0  w-full h-full bg-gradient-to-t from-[#111111] to-transparent rounded-xl ">
+
+    </div>
+ <div class="w-9/12 text-center mx-auto relative">
+        <h1 class="text-7xl font-extrabold text-white mb-6 font-Garamond">We Provide Effective Legal Solutions</h1>
+     <p class="font-Poppins text-[16px] text-[#E7E7E7] w-9/12 mx-auto mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <input type="text" placeholder="Search your services" class="input outline-none  w-full max-w-xs  placeholder:text-[16px] placeholder:text-[#A0A0A0] mr-4" />
+        <button class="btn text-white bg-primary font-Poppins text-xl border-0 font-semibold">Search</button>
+ </div>
+
+ </div>
+
+ <!-- banner section ends here  -->
 
     </header>
     <!-- header ends here  -->
